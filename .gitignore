@@ -1,0 +1,9 @@
+﻿other/
+# Tex-файлы
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.gz*
