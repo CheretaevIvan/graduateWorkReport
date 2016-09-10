@@ -1,0 +1,407 @@
+\hypertarget{class_network_equipment_model}{}\section{Класс Network\+Equipment\+Model}
+\label{class_network_equipment_model}\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+
+
+Модель сетевого оборудования  
+
+
+Граф наследования\+:Network\+Equipment\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_network_equipment_model}
+\end{center}
+\end{figure}
+\subsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_network_equipment_model_a952a89f03887ab83ed42d404aad7acf4}{set\+Need\+Hostname} (bool \hyperlink{class_network_equipment_model_a67cb5cf3284a19a1a0d6a7b22fa2a91e}{need\+Hostname})
+\begin{DoxyCompactList}\small\item\em Оболочка для установления необходимости называть оборудование \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_a844d05c49e462ea50dbf07b73597f65c}{set\+Hostname} (Q\+String \hyperlink{class_network_equipment_model_a59f5581ce5f16229235bc9ace24e11d6}{hostname})
+\begin{DoxyCompactList}\small\item\em Оболочка для установки нового названия оборудования \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_a0303cb675bc0d42bff6b90d6e7b8bbb1}{set\+Password\+Encryption} (bool \hyperlink{class_network_equipment_model_a46900023e99e2791d5e0ff85204f25fb}{password\+Encryption})
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения необходимости скрывать пароли \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_a45955890b14b8dbd4f76df92cff2a82e}{set\+Need\+Banner\+Motd} (bool \hyperlink{class_network_equipment_model_ab20b1087ae50a8546bdabfa598e8c647}{need\+Banner\+Motd})
+\begin{DoxyCompactList}\small\item\em Оболочка для установление необходимости указывать приветственное сообщение \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_a73bfb9a80a611f8925e23b4e68c95821}{set\+Banner\+Motd} (Q\+String \hyperlink{class_network_equipment_model_a9256503fdb609788939777565574ae7c}{banner\+Motd})
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения текущего текста приветствия \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_abe5f1892f0ca1bf727b8ceaf7baac189}{set\+Logging\+Synchronous} (bool \hyperlink{class_network_equipment_model_a7321ba74141fd1bc694a6607363625ae}{logging\+Synchronous})
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения запрета вывода каких-\/либо консольных сообщений при вводе команд в консольном режиме \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_afcdfd40284207e699e956dd3877a96c2}{set\+Need\+Password\+Console} (bool \hyperlink{class_network_equipment_model_ada70138a6ca4a8ad1bd07fa48998c9d8}{need\+Password\+Console})
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения необходимости ввода пароля при консольном подключении \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_aabfab95bca2f8b6b8d034662474e8dde}{set\+Password\+Console} (Q\+String password)
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения пароля при консольном подключении \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_a1d554674ebbe923251c73edb4832a470}{set\+Need\+Password\+Vty} (bool \hyperlink{class_network_equipment_model_aba3aec560271bbf72ee93fdf5e4c3a2e}{need\+Password\+Vty})
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения необходимости ввода пароля при терминальном подключении \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_network_equipment_model_ac6b735b52e9d5abef230bf6f0b475ab5}{set\+Password\+Vty} (Q\+String password)
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения пароля при терминальном подключении \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries need\+Hostname\+Changed} (bool \hyperlink{class_network_equipment_model_a67cb5cf3284a19a1a0d6a7b22fa2a91e}{need\+Hostname})\hypertarget{class_network_equipment_model_a8c4c355442953dd22990b55eff5d1c87}{}\label{class_network_equipment_model_a8c4c355442953dd22990b55eff5d1c87}
+
+\item 
+virtual void {\bfseries hostname\+Changed} (Q\+String \hyperlink{class_network_equipment_model_a59f5581ce5f16229235bc9ace24e11d6}{hostname})\hypertarget{class_network_equipment_model_a022d6ce226b046705de3a2c1fd430e33}{}\label{class_network_equipment_model_a022d6ce226b046705de3a2c1fd430e33}
+
+\item 
+virtual void {\bfseries password\+Encryption\+Changed} (bool \hyperlink{class_network_equipment_model_a46900023e99e2791d5e0ff85204f25fb}{password\+Encryption})\hypertarget{class_network_equipment_model_ab8312ba3ebe2b6d3af20ebdafd90ec17}{}\label{class_network_equipment_model_ab8312ba3ebe2b6d3af20ebdafd90ec17}
+
+\item 
+virtual void {\bfseries need\+Banner\+Motd\+Changed} (bool \hyperlink{class_network_equipment_model_ab20b1087ae50a8546bdabfa598e8c647}{need\+Banner\+Motd})\hypertarget{class_network_equipment_model_ae4c88d5f5818022382a52b06e8d2fe73}{}\label{class_network_equipment_model_ae4c88d5f5818022382a52b06e8d2fe73}
+
+\item 
+virtual void {\bfseries banner\+Motd\+Changed} (Q\+String \hyperlink{class_network_equipment_model_a9256503fdb609788939777565574ae7c}{banner\+Motd})\hypertarget{class_network_equipment_model_a58ccbc2eadc43659e365316ad617ea18}{}\label{class_network_equipment_model_a58ccbc2eadc43659e365316ad617ea18}
+
+\item 
+virtual void {\bfseries logging\+Synchronous\+Changed} (bool \hyperlink{class_network_equipment_model_a7321ba74141fd1bc694a6607363625ae}{logging\+Synchronous})\hypertarget{class_network_equipment_model_a2f68757692a19aa6ead965f5d9850dbd}{}\label{class_network_equipment_model_a2f68757692a19aa6ead965f5d9850dbd}
+
+\item 
+virtual void {\bfseries need\+Password\+Console\+Changed} (bool \hyperlink{class_network_equipment_model_ada70138a6ca4a8ad1bd07fa48998c9d8}{need\+Password\+Console})\hypertarget{class_network_equipment_model_a1f0f610dad382795f3c18e01090bda98}{}\label{class_network_equipment_model_a1f0f610dad382795f3c18e01090bda98}
+
+\item 
+virtual void {\bfseries password\+Console\+Changed} (Q\+String password)\hypertarget{class_network_equipment_model_afcb0ebd93488fb50551e5464e3e7f307}{}\label{class_network_equipment_model_afcb0ebd93488fb50551e5464e3e7f307}
+
+\item 
+virtual void {\bfseries need\+Password\+Vty\+Changed} (bool \hyperlink{class_network_equipment_model_aba3aec560271bbf72ee93fdf5e4c3a2e}{need\+Password\+Vty})\hypertarget{class_network_equipment_model_a6a4774e0986ef76f12ca448b7c9933ad}{}\label{class_network_equipment_model_a6a4774e0986ef76f12ca448b7c9933ad}
+
+\item 
+virtual void {\bfseries password\+Vty\+Changed} (Q\+String password)\hypertarget{class_network_equipment_model_a5596328a92c1af7230b4efc793f6762d}{}\label{class_network_equipment_model_a5596328a92c1af7230b4efc793f6762d}
+
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Network\+Equipment\+Model} (Q\+Object $\ast$parent=0)\hypertarget{class_network_equipment_model_a757c88ce2d675d041d3539200f9f0a46}{}\label{class_network_equipment_model_a757c88ce2d675d041d3539200f9f0a46}
+
+\item 
+virtual bool \hyperlink{class_network_equipment_model_a67cb5cf3284a19a1a0d6a7b22fa2a91e}{need\+Hostname} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения необходимости называть оборудование \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{class_network_equipment_model_a59f5581ce5f16229235bc9ace24e11d6}{hostname} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения текущего названия оборудования \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_network_equipment_model_a46900023e99e2791d5e0ff85204f25fb}{password\+Encryption} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения сведений о необходимости скрывать пароли \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_network_equipment_model_ab20b1087ae50a8546bdabfa598e8c647}{need\+Banner\+Motd} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения необходимости указывать приветственное сообщение \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{class_network_equipment_model_a9256503fdb609788939777565574ae7c}{banner\+Motd} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения текущего текста приветствия \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_network_equipment_model_a7321ba74141fd1bc694a6607363625ae}{logging\+Synchronous} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения сведений о запрете вывода каких-\/либо консольных сообщений при вводе команд в консольном режиме \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_network_equipment_model_ada70138a6ca4a8ad1bd07fa48998c9d8}{need\+Password\+Console} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения сведений о необходимости ввода пароля при консольном подключении \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{class_network_equipment_model_a34400a7581340c475357034e3b183e5c}{password\+Console} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения пароля при консольном подключении \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_network_equipment_model_aba3aec560271bbf72ee93fdf5e4c3a2e}{need\+Password\+Vty} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для изменения необходимости ввода пароля при терминальном подключении \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{class_network_equipment_model_a066e6c334dcf83f5f2646be4f8f19299}{password\+Vty} ()
+\begin{DoxyCompactList}\small\item\em Оболочка для получения пароля при терминальном подключении \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Модель сетевого оборудования 
+
+\subsection{Методы}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!banner\+Motd@{banner\+Motd}}
+\index{banner\+Motd@{banner\+Motd}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{banner\+Motd()}{bannerMotd()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Network\+Equipment\+Model\+::banner\+Motd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_a9256503fdb609788939777565574ae7c}{}\label{class_network_equipment_model_a9256503fdb609788939777565574ae7c}
+
+
+Оболочка для получения текущего текста приветствия 
+
+\begin{DoxyReturn}{Возвращает}
+текущий текст приветствия 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!hostname@{hostname}}
+\index{hostname@{hostname}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{hostname()}{hostname()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Network\+Equipment\+Model\+::hostname (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_a59f5581ce5f16229235bc9ace24e11d6}{}\label{class_network_equipment_model_a59f5581ce5f16229235bc9ace24e11d6}
+
+
+Оболочка для получения текущего названия оборудования 
+
+\begin{DoxyReturn}{Возвращает}
+название оборудования 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!logging\+Synchronous@{logging\+Synchronous}}
+\index{logging\+Synchronous@{logging\+Synchronous}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{logging\+Synchronous()}{loggingSynchronous()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\+Equipment\+Model\+::logging\+Synchronous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_a7321ba74141fd1bc694a6607363625ae}{}\label{class_network_equipment_model_a7321ba74141fd1bc694a6607363625ae}
+
+
+Оболочка для получения сведений о запрете вывода каких-\/либо консольных сообщений при вводе команд в консольном режиме 
+
+\begin{DoxyReturn}{Возвращает}
+сведения о запрете вывода каких-\/либо консольных сообщений при вводе команд в консольном режиме 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!need\+Banner\+Motd@{need\+Banner\+Motd}}
+\index{need\+Banner\+Motd@{need\+Banner\+Motd}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{need\+Banner\+Motd()}{needBannerMotd()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\+Equipment\+Model\+::need\+Banner\+Motd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_ab20b1087ae50a8546bdabfa598e8c647}{}\label{class_network_equipment_model_ab20b1087ae50a8546bdabfa598e8c647}
+
+
+Оболочка для получения необходимости указывать приветственное сообщение 
+
+\begin{DoxyReturn}{Возвращает}
+необходимость указывать приветственное сообщение 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!need\+Hostname@{need\+Hostname}}
+\index{need\+Hostname@{need\+Hostname}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{need\+Hostname()}{needHostname()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\+Equipment\+Model\+::need\+Hostname (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_a67cb5cf3284a19a1a0d6a7b22fa2a91e}{}\label{class_network_equipment_model_a67cb5cf3284a19a1a0d6a7b22fa2a91e}
+
+
+Оболочка для получения необходимости называть оборудование 
+
+\begin{DoxyReturn}{Возвращает}
+необходимость называеть оборудование 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!need\+Password\+Console@{need\+Password\+Console}}
+\index{need\+Password\+Console@{need\+Password\+Console}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{need\+Password\+Console()}{needPasswordConsole()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\+Equipment\+Model\+::need\+Password\+Console (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_ada70138a6ca4a8ad1bd07fa48998c9d8}{}\label{class_network_equipment_model_ada70138a6ca4a8ad1bd07fa48998c9d8}
+
+
+Оболочка для получения сведений о необходимости ввода пароля при консольном подключении 
+
+\begin{DoxyReturn}{Возвращает}
+необходимость ввода пароля при консольном подключении 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!need\+Password\+Vty@{need\+Password\+Vty}}
+\index{need\+Password\+Vty@{need\+Password\+Vty}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{need\+Password\+Vty()}{needPasswordVty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\+Equipment\+Model\+::need\+Password\+Vty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_aba3aec560271bbf72ee93fdf5e4c3a2e}{}\label{class_network_equipment_model_aba3aec560271bbf72ee93fdf5e4c3a2e}
+
+
+Оболочка для изменения необходимости ввода пароля при терминальном подключении 
+
+\begin{DoxyReturn}{Возвращает}
+необходимость ввода пароля при терминальном подключении 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!password\+Console@{password\+Console}}
+\index{password\+Console@{password\+Console}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{password\+Console()}{passwordConsole()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Network\+Equipment\+Model\+::password\+Console (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_a34400a7581340c475357034e3b183e5c}{}\label{class_network_equipment_model_a34400a7581340c475357034e3b183e5c}
+
+
+Оболочка для получения пароля при консольном подключении 
+
+\begin{DoxyReturn}{Возвращает}
+пароль при консольном подключении 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!password\+Encryption@{password\+Encryption}}
+\index{password\+Encryption@{password\+Encryption}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{password\+Encryption()}{passwordEncryption()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\+Equipment\+Model\+::password\+Encryption (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_a46900023e99e2791d5e0ff85204f25fb}{}\label{class_network_equipment_model_a46900023e99e2791d5e0ff85204f25fb}
+
+
+Оболочка для получения сведений о необходимости скрывать пароли 
+
+\begin{DoxyReturn}{Возвращает}
+необходимо ли скрывать пароли 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!password\+Vty@{password\+Vty}}
+\index{password\+Vty@{password\+Vty}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{password\+Vty()}{passwordVty()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Network\+Equipment\+Model\+::password\+Vty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_equipment_model_a066e6c334dcf83f5f2646be4f8f19299}{}\label{class_network_equipment_model_a066e6c334dcf83f5f2646be4f8f19299}
+
+
+Оболочка для получения пароля при терминальном подключении 
+
+\begin{DoxyReturn}{Возвращает}
+пароль при терминальном подключении 
+\end{DoxyReturn}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Banner\+Motd@{set\+Banner\+Motd}}
+\index{set\+Banner\+Motd@{set\+Banner\+Motd}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Banner\+Motd}{setBannerMotd}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Banner\+Motd (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{banner\+Motd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_a73bfb9a80a611f8925e23b4e68c95821}{}\label{class_network_equipment_model_a73bfb9a80a611f8925e23b4e68c95821}
+
+
+Оболочка для изменения текущего текста приветствия 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em banner\+Motd} & новый текст приветствия \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Hostname@{set\+Hostname}}
+\index{set\+Hostname@{set\+Hostname}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Hostname}{setHostname}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Hostname (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{hostname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_a844d05c49e462ea50dbf07b73597f65c}{}\label{class_network_equipment_model_a844d05c49e462ea50dbf07b73597f65c}
+
+
+Оболочка для установки нового названия оборудования 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em hostname} & название оборудования \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Logging\+Synchronous@{set\+Logging\+Synchronous}}
+\index{set\+Logging\+Synchronous@{set\+Logging\+Synchronous}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Logging\+Synchronous}{setLoggingSynchronous}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Logging\+Synchronous (
+\begin{DoxyParamCaption}
+\item[{bool}]{logging\+Synchronous}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_abe5f1892f0ca1bf727b8ceaf7baac189}{}\label{class_network_equipment_model_abe5f1892f0ca1bf727b8ceaf7baac189}
+
+
+Оболочка для изменения запрета вывода каких-\/либо консольных сообщений при вводе команд в консольном режиме 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em logging\+Synchronous} & сведений о запрете вывода каких-\/либо консольных сообщений при вводе команд в консольном режиме \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Need\+Banner\+Motd@{set\+Need\+Banner\+Motd}}
+\index{set\+Need\+Banner\+Motd@{set\+Need\+Banner\+Motd}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Need\+Banner\+Motd}{setNeedBannerMotd}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Need\+Banner\+Motd (
+\begin{DoxyParamCaption}
+\item[{bool}]{need\+Banner\+Motd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_a45955890b14b8dbd4f76df92cff2a82e}{}\label{class_network_equipment_model_a45955890b14b8dbd4f76df92cff2a82e}
+
+
+Оболочка для установление необходимости указывать приветственное сообщение 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em need\+Banner\+Motd} & необходимость указывать приветственное сообщение \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Need\+Hostname@{set\+Need\+Hostname}}
+\index{set\+Need\+Hostname@{set\+Need\+Hostname}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Need\+Hostname}{setNeedHostname}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Need\+Hostname (
+\begin{DoxyParamCaption}
+\item[{bool}]{need\+Hostname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_a952a89f03887ab83ed42d404aad7acf4}{}\label{class_network_equipment_model_a952a89f03887ab83ed42d404aad7acf4}
+
+
+Оболочка для установления необходимости называть оборудование 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em need\+Hostname} & необходимость называть оборудование \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Need\+Password\+Console@{set\+Need\+Password\+Console}}
+\index{set\+Need\+Password\+Console@{set\+Need\+Password\+Console}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Need\+Password\+Console}{setNeedPasswordConsole}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Need\+Password\+Console (
+\begin{DoxyParamCaption}
+\item[{bool}]{need\+Password\+Console}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_afcdfd40284207e699e956dd3877a96c2}{}\label{class_network_equipment_model_afcdfd40284207e699e956dd3877a96c2}
+
+
+Оболочка для изменения необходимости ввода пароля при консольном подключении 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em need\+Password\+Console} & необходимость ввода пароля при консольном подключении \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Need\+Password\+Vty@{set\+Need\+Password\+Vty}}
+\index{set\+Need\+Password\+Vty@{set\+Need\+Password\+Vty}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Need\+Password\+Vty}{setNeedPasswordVty}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Need\+Password\+Vty (
+\begin{DoxyParamCaption}
+\item[{bool}]{need\+Password\+Vty}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_a1d554674ebbe923251c73edb4832a470}{}\label{class_network_equipment_model_a1d554674ebbe923251c73edb4832a470}
+
+
+Оболочка для изменения необходимости ввода пароля при терминальном подключении 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em need\+Password\+Vty} & необходимость ввода пароля при терминальном подключении \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Password\+Console@{set\+Password\+Console}}
+\index{set\+Password\+Console@{set\+Password\+Console}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Password\+Console}{setPasswordConsole}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Password\+Console (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_aabfab95bca2f8b6b8d034662474e8dde}{}\label{class_network_equipment_model_aabfab95bca2f8b6b8d034662474e8dde}
+
+
+Оболочка для изменения пароля при консольном подключении 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em password} & новый пароль при консольном подключении \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Password\+Encryption@{set\+Password\+Encryption}}
+\index{set\+Password\+Encryption@{set\+Password\+Encryption}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Password\+Encryption}{setPasswordEncryption}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Password\+Encryption (
+\begin{DoxyParamCaption}
+\item[{bool}]{password\+Encryption}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_a0303cb675bc0d42bff6b90d6e7b8bbb1}{}\label{class_network_equipment_model_a0303cb675bc0d42bff6b90d6e7b8bbb1}
+
+
+Оболочка для изменения необходимости скрывать пароли 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em password\+Encryption} & необходимо ли скрывать пароли \\
+\hline
+\end{DoxyParams}
+\index{Network\+Equipment\+Model@{Network\+Equipment\+Model}!set\+Password\+Vty@{set\+Password\+Vty}}
+\index{set\+Password\+Vty@{set\+Password\+Vty}!Network\+Equipment\+Model@{Network\+Equipment\+Model}}
+\subsubsection[{\texorpdfstring{set\+Password\+Vty}{setPasswordVty}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Equipment\+Model\+::set\+Password\+Vty (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_network_equipment_model_ac6b735b52e9d5abef230bf6f0b475ab5}{}\label{class_network_equipment_model_ac6b735b52e9d5abef230bf6f0b475ab5}
+
+
+Оболочка для изменения пароля при терминальном подключении 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em password} & новый пароль при терминальном подключении \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+networkequipmentmodel.\+h\item 
+networkequipmentmodel.\+cpp\end{DoxyCompactItemize}

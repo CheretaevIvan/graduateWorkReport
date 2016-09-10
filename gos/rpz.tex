@@ -1,0 +1,97 @@
+%% Преамбула TeX-файла
+
+% 1. Стиль и язык
+\documentclass[utf8x, 14pt]{G7-32} % Стиль (по умолчанию будет 14pt)
+
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble.inc}
+
+	
+% Настройки листингов.
+\ifPDFTeX
+\include{listings.inc}
+\else
+\usepackage{local-minted}
+\fi
+
+\usepackage{pdfpages}
+
+% Полезные макросы листингов.
+\include{macros.inc}
+
+\begin{document}
+	
+	\title{Разработка ПО для автоматизации конфигурирования сетевого оборудования CISCO}
+	\subtitle{Выпускная квалификационная работа\\
+		Пояснительная записка\\
+		090301 000 000 314 ПЗ}
+	\teachers{1}{Трофимов С.П.}
+	\students{1}{Черетаев И.В.}
+	\controllers{1}{Селиванова И.А.}
+	\group{РИ-420207}
+	\city{Екатеринбург}
+	\thispagestyle{empty}
+	\includepdf[pages=-,pagecommand={}]{titul}
+%	\maketitle
+%	\setcounter{page}{2} % начать нумерацию страниц с №2
+	
+\frontmatter % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
+
+% Команды \breakingbeforechapters и \nonbreakingbeforechapters
+% управляют разрывом страницы перед главами.
+% По-умолчанию страница разрывается.
+
+% \nobreakingbeforechapters
+% \breakingbeforechapters
+
+
+\include{00-abstract}  
+
+%\linespread{1.45}
+\tableofcontents
+%\linespread{1.5}
+%\linespread{\Gost@LineSpread}
+
+\include{01-norm}
+%\include{10-defines}
+\include{11-abbrev}
+
+\include{12-intro}
+
+\mainmatter % это включает нумерацию глав и секций в документе ниже
+
+\include{20-overview}
+\include{22-chooseIDE}
+\include{21-tz}
+
+\include{31-main}
+
+\input{33-user}
+
+%\include{30-design}
+%\include{40-impl}
+%\include{50-research}
+%\include{60-economics}
+%\include{70-bzd}
+
+\backmatter %% Здесь заканчивается нумерованная часть документа и начинаются ссылки и
+            %% заключение
+
+\include{80-conclusion}
+
+\include{81-biblio}
+
+\appendix   % Тут идут приложения
+
+%\include{90-appendix1}
+%\include{91-appendix2}
+%\includedoc{latex/refman}
+%\setcounter{page}{\thepage-1}
+%\include{00-abstract}  
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

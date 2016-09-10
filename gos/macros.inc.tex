@@ -1,0 +1,48 @@
+% Любимые команды
+\newcommand{\Code}[1]{\textbf{#1}}
+
+
+% Автоподсчет количества рисунков, таблиц, источников, приложений, частей.
+\newcounter{totfigures}
+\newcounter{tottables}
+\newcounter{totalltables}
+\newcounter{totreferences}
+\newcounter{totappendix}
+\newcounter{totchapters}
+\newcounter{totallchapters}
+
+\usepackage{etoolbox}
+\makeatletter
+\newif\ifLT@nocaption
+\preto\longtable{\LT@nocaptiontrue}
+\appto\endlongtable{%
+	\ifLT@nocaption
+	\addtocounter{table}{\m@ne}%
+	\fi}
+\preto\LT@caption{%
+	\noalign{\global\LT@nocaptionfalse}}
+\makeatother
+
+\makeatletter
+\AtEndDocument{%
+	\immediate\write\@mainaux{%
+		\string\gdef\string\totfig{\number\value{totfigures}}%
+		\string\gdef\string\tottab{\number\value{tottables}}%   
+		\string\gdef\string\totbib{\number\value{totreferences}}%  
+		\string\gdef\string\totappend{\number\value{totappendix}}% 
+		\string\gdef\string\totchaps{\number\value{totchapters}}
+	}%
+}
+\makeatother
+
+\usepackage{etoolbox}
+\appto{\endfigure}{\addtocounter{totfigures}{1}}{}{}
+\appto{\endtable}{\addtocounter{totalltables}{1}}{}{}
+\appto{\endlongtable}{\addtocounter{totalltables}{1}}{}{}
+\pretocmd{\bibitem}{\addtocounter{totreferences}{1}}{}{}
+\pretocmd{\chapter}{\addtocounter{totappendix}{1}}{}{}
+\pretocmd{\appendix}{\setcounter{totappendix}{0}}{}{}
+
+\pretocmd{\chapter}{\addtocounter{totallchapters}{1}}{}{}
+\pretocmd{\mainmatter}{\setcounter{totallchapters}{0}}{}{}	\pretocmd{\backmatter}{\setcounter{totchapters}{\thetotallchapters}}{}{}
+\pretocmd{\appendix}{\setcounter{tottables}{\thetotalltables}}{}{}

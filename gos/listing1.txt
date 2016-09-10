@@ -1,0 +1,5 @@
+QSettings *settings = new QSettings("settings.conf",QSettings::NativeFormat);
+QStringList list = settings->childGroups(); // получаем список всех шаблонов
+for (QStringList::iterator it = list.begin();it != list.end();it++){
+	/*используем значения из файла для отображения списка шаблонов*/
+}
